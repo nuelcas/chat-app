@@ -42,7 +42,7 @@ input[type="text"] {
   width: 50px;
   height: 18px;
   padding: 10px;
-  border: 1px blue;
+  border: 1px solid blue; /* Fixed typo: should be "1px solid blue" */
   border-radius: 15px;
   background-color: #f0f0f0;
   margin: 0px 10px 0px 10px;
@@ -67,8 +67,7 @@ button {
   left: 130px;
   right: 30px;
 
-  display: none; /* Hide initially */
-  /* Ensure it's above the content*/
+  display: none;
 }
 
 .emoji-button {
@@ -96,4 +95,25 @@ button {
   color: whitesmoke;
   border: none;
   border-radius: 7px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 900px) {
+  .iphone {
+    width: 80%;
+    max-width: 400px; /* Limit width for larger screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .iphone {
+    width: 90%;
+    max-width: 300px; /* Limit width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .iphone {
+    width: 95%;
+  }
 }
