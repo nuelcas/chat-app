@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Real-Time Chat App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="iphone">
+      <div class="chat-screen" id="message-container">
+        <!-- Messages will be appended here -->
+      </div>
+      <div class="input-box">
+        <button onclick="accessCamera()"><i class="fas fa-camera"></i> </button>
+        <input type="file" id="file-input" accept="image/*" />
+        <button class="upload-image" onclick="uploadImage()"><i class="fas fa-upload"></i></button>
+        </button>
+        <button onclick="openEmojiPicker()" style="color: rgb(192, 139, 5);"><i class="fas fa-smile fa-1x"></i>
+        </button>
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Type your message..."
+        />
+        <button class="send" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
